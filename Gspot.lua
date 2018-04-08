@@ -456,7 +456,7 @@ Gspot.util = {
 	end,
 
 	setimage = function(this, img)
-		if type(img) == 'string' and love.filesystem.exists(img) then img = love.graphics.newImage(img) end
+		if type(img) == 'string' and love.filesystem.getInfo(img) then img = love.graphics.newImage(img) end
 		if pcall(function(img) return img:type() == 'Image' end, img) then this.img = img
 		else this.img = nil end
 	end,
@@ -469,7 +469,7 @@ Gspot.util = {
 	end,
 
 	setfont = function(this, font, size)
-		if type(font) == 'string' and love.filesystem.exists(font) then
+		if type(font) == 'string' and love.filesystem.getInfo(font) then
 			font = love.graphics.newFont(font, size)
 		elseif type(font) == 'number' then
 			font = love.graphics.newFont(font)
