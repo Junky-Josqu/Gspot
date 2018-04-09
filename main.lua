@@ -9,8 +9,8 @@
 -- 2. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
 -- 3. This notice may not be removed or altered from any source distribution.
 
-if love._version_major == 0 and love._version_minor < 9 then
-	error("This library needs love2d 0.9.0 or above")
+if love._version_major == 0 and love._version_minor < 11 then
+	error("This library needs love2d 0.11.0 or above")
 end
 
 gui = require('Gspot') -- import the library
