@@ -1,5 +1,5 @@
 # Gspöt - a stateful GUI lib for LÖVE
-
+My own quick and dirty fork for a 11.0 Gspöt
 ### Notes
 - Documentation is currently out of date, but demo code is commented, and should provide enough detail to get by. Wiki will be updates asap.
 
